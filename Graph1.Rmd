@@ -18,10 +18,11 @@ str(mtcars)
 ```{r}
 #Select aes
 library(tidyverse)
-ggplot(mtcars, aes(x=hp, y = disp), theme_ipsum)
+fig <- ggplot(mtcars, aes(x=hp, y = disp))
 ```
 
 ```{r}
 #Add finishing details
+fig + geom_point(color = "blue")
 ```
 
