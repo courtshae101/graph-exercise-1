@@ -12,10 +12,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 #Load Data
 data("mtcars")
+str(mtcars)
 ```
 
 ```{r}
 #Select aes
+library(tidyverse)
+ggplot(mtcars, aes(x=hp, y = disp), theme_ipsum)
 ```
 
 ```{r}
